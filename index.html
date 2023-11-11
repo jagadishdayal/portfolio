@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Your Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Navigation Bar -->
+                <h2>Jagadish TD</h2>
+       <!-- <h1 class="navbar-brand">Jagadish TD</h1>-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--<Button>Resume</Button>-->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav1"><a class="nav-1" href="#home">Home</a></li>
+                <li class="nav2"><a class="nav-2" href="#about">About</a></li>
+                <li class="nav3"><a class="nav-3" href="#skills">Skills</a></li>
+                <li class="nav4"><a class="nav-4" href="#projects">Projects</a></li>
+                <li class="nav5"><a class="nav-5" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <section  id="home" class="intro">
+        <h1 class="typing-text"></h1><br>
+            <a href="https://drive.google.com/file/d/1-drDPPxW3Sv0FBblgs5O5PW7RiTtMuDS/view?usp=drivesdk" target="_blank">
+            <button>Resume</button><br><br></a>
+     </section>
+
+    <section  data-aos="fade-up-right" id="about" class="about">
+        <h1>About me</h1>
+        <br><br><br> 
+        <h2>As a fresh frontend developer with proficiency in HTML, CSS, and programming languages like C and Java, I'm passionate about crafting engaging web experiences and look forward to creating innovative, user-friendly solutions for the digital world.</h2>
+    </section>
+
+    <section data-aos="fade-up-right" id="skills" class="skills">
+        <h2 data-aos="fade-up-right">Skills</h2>
+        <br><br><br>
+        <div class="skills-icons">
+            <i class="fab fa-c fa-2x"></i>
+            <i class="fab fa-html5 fa-2x"></i>
+            <i class="fab fa-css3 fa-2x"></i>
+            <i class="fab fa-java fa-2x"></i>
+            <i class="fas fa-database fa-2x"></i>
+            <i class="fab fa-python fa-2x"></i>
+            <br> <br> and so on...
+        </div>
+    </section>
+
+    <section data-aos="fade-up-right" id="projects" class="projects">
+        <h1 data-aos="zoom-out-up"> <span class="spanproject"
+            style="border-bottom: 2px solid white; text-align: center;">Projects</span> <br> <br></h1>
+            <h2><p>Hybrid Application for connecting Farmers </p> 
+             <br>
+            <p>Medicine Database Android App</p> 
+            <br>
+            <p>Travel website</p> 
+            <br>
+            <p>Simple Calculator</p> 
+             <br>
+            <span style="text-transform:lowercase;"> And Many More to Come!...</span>
+            </h2>
+        </section>
+
+    <section  data-aos="fade-up-right" id="contact" class="contact">
+        <h1 data-aos="fade-down" style="word-spacing: 1cm;">
+            <a class="a-profile" href="https://www.linkedin.com/in/jagadish-td-193645211/" target="_blank"><i
+                class="fab fa-linkedin fa-3x"></i></a>
+            <a class="a-profile" href="https://www.facebook.com/profile.php?id=100033336643666&mibextid=ZbWKwL" target="_blank"><i
+                class="fab fa-facebook fa-3x"></i></a>
+            <a class="a-profile" href="https://www.instagram.com/" target="_blank"><i
+                class="fab fa-instagram fa-3x"></i></a>
+            <a class="a-profile" href="https://github.com/jagadishdayal" target="_blank"><i 
+                class="fab fa-github fa-3x"></i></a>   
+        </h1>
+    </section>
+
+    <script src="Script.js"></script>
+  <!-- AOS.js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script>
+    AOS.init({
+      delay: 200, // values from 0 to 3000, with step 50ms
+      duration: 1500, // values from 0 to 3000, with step 50ms
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling 
+    });
+  </script>
+</body>
+</html>

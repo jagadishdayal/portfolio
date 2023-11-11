@@ -1,0 +1,218 @@
+/*@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");*/
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #7b7272;
+  color: paleturquoise;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem;
+}
+
+ nav ul li {
+  margin: 0 1rem;
+}
+
+
+.nav-1:hover {
+  color: #FF5733; /* Set your desired color */
+}
+.nav2-2:hover {
+  color:aqua;
+}
+.nav-3:hover {
+  color: red;
+}
+.nav-4:hover {
+  color: #27AE60;
+}
+.nav-5:hover{
+  color:#0972e2e0;
+}
+
+/* Button styles */
+button {
+  color: blue;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#home button {
+  background-color:coral;
+  border: none;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer; 
+}
+
+/* Section styles */
+section {
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-transform: uppercase;
+  letter-spacing: 2px; 
+}
+
+.about, .skills, .projects, .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* Skills section styles */
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  gap: 2rem;
+  text-align: center;
+  margin-right: 2px;
+}
+
+#about {
+  background-color:rgb(37, 208, 208); /* Set background color for About section */
+  border: 2px solid aqua; /* Add border */
+  padding: 20px; 
+  color: white;
+ }
+
+#skills {
+  background-color:rgb(238, 18, 18) ; /* Set background color for Skills section */
+  border: 2px solid rgb(241, 21, 21); /* Add border */
+  padding: 20px; /* Add padding */
+  color:white;
+}
+
+#projects {
+  background-color: #10a54ee1; /* Set background color for Projects section */
+  border: 2px solid #27AE60; /* Add border */
+  padding: 20px; /* Add padding */
+  color: #e5eef4;
+}
+
+#contact {
+  background-color: rgb(224, 132, 12); /* Set background color for Contact section */
+  border: 2px solid #370de2; /* Add border */
+  padding: 20px; /* Add padding */
+  color:white;
+}
+
+/* Projects section styles */
+#projects h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+
+}
+
+#projects h2 {
+  font-size: 1.5rem;
+}
+
+/* Contact section styles */
+.fa-linkedin:hover {
+  color: #e5eef4;
+}
+
+.fa-facebook:hover {
+  color: #e0e7ef;
+}
+
+.fa-instagram:hover {
+  color: #eee3e5;
+}
+
+.fa-github:hover {
+  color: #ede8e8;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul li {
+    margin: 1rem 0;
+  }
+}
+/* text typing Animation */
+
+.typing-text {
+  color:white; /* Change the color to your desired color (e.g., red) */
+  overflow: hidden; /* Hide the overflowing characters */
+  border-right: 2px solid transparent; /* Create a blinking cursor effect */
+  white-space: nowrap; /* Prevent text from wrapping */
+  margin: 0; /* Remove any margin or padding */
+  display: inline-block; /* Display as inline-block to allow text to animate */
+}
+
+/* Animation for typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.intro {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* 100% of viewport height */
+  width: 100vw; /* 100% of viewport width */
+}
+ 
+.typing-text::after {
+  content: " Hey! There, I'm Jagadish";
+  display: inline-block;
+  animation: typing 3s steps(22, end)  , forwards, blink 2s infinite; /* Adjust duration and steps as needed */
+}
+
+/* home page  rainbow animation */
+
+#home {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 200% 100%;
+  animation: rainbow 3s linear infinite;
+  padding: 20px;
+  text-align: center;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
